@@ -4,13 +4,17 @@
 
 <beans >
 	<bean 
-		id = "helloWorld" 
+		id = "helloWorld1" 
 		class = "org.tanmay.javatutorial.HelloWorld" 
 		scope = "singleton" 
 		init-method="init" destroy-method="destroy"	
 	>
 		<property name = "message" value = "hello Tanmay!!" />
 	</bean>
+	
+	
+	<bean class = "org.tanmay.javatutorial.InitHelloWorld">	</bean>
+	
 </beans> 
 
 
