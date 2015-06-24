@@ -9,8 +9,8 @@
 		scope = "prototype" 
 	>
 		
-		<constructor-arg value = "Scalene" />
-		<constructor-arg value = "3"	/>
+		
+		<constructor-arg type ="int" value = "3"	/>
 		
 		
 	</bean>
