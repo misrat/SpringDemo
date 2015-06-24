@@ -18,19 +18,7 @@ public class DrawingApp {
 	public static void main(String[] args) {
 		//using application context
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-		Triangle triangle = (Triangle)context.getBean("triangle");
-		Triangle triangle2 = (Triangle)context.getBean("triangle"); 
-		Triangle triangle3 = (Triangle)context.getBean("triangle");
-//		triangle.draw();
-//		triangle2.draw();
-		
-		if(triangle.equals(triangle3)){
-			System.out.println("Duplicate Object ");
-		}else{
-			System.out.println("Different Object");
-		}
-		
-		
-		
+		Triangle triangleObject = (Triangle)context.getBean("triangle");
+		triangleObject.draw();
 	}
 }
