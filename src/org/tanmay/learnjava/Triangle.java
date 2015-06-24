@@ -1,31 +1,34 @@
 package org.tanmay.learnjava;
 
 public class Triangle {
-	private String type;
-	private String nSides;
 	
+	Point pointA;
+	Point pointB;
+	Point pointC;
 	
-	public String getType(){
-		return type;
+	public Point getPointA() {
+		return pointA;
 	}
-	
-	//Setter() is used by the Spring bean factory
-	//if removed - will get error
-	public void setType(String type){
-		this.type = type;
+	public void setPointA(Point pointA) {
+		this.pointA = pointA;
 	}
-	
-	public String getnSides() {
-		return nSides;
+	public Point getPointB() {
+		return pointB;
 	}
-
-	public void setnSides(String nSides) {
-		this.nSides = nSides;
+	public void setPointB(Point pointB) {
+		this.pointB = pointB;
+	}
+	public Point getPointC() {
+		return pointC;
+	}
+	public void setPointC(Point pointC) {
+		this.pointC = pointC;
 	}
 	
 	public void draw(){
-		System.out.println(this.getType() + " Triangle drawn");
-		System.out.println("No of Side = " + getnSides());	
-		
+		System.out.println("pointA = " + pointA.getX() + ", "+ pointA.getY());
+		System.out.println("pointB = " + pointB.getX() + ", "+ pointB.getY());
+		System.out.println("pointC = " + pointC.getX() + ", "+ pointC.getY());
 	}
+	
 }
