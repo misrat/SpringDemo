@@ -5,22 +5,24 @@
 <beans>
 	<bean id = "triangle" class = "org.tanmay.learnjava.Triangle" scope = "prototype"	>
 		<property name = "PointA" ref = "zeropoint" />
-		<property name = "PointB" ref = "point2" />
-		<property name = "PointC" ref = "point3" />
+		
+		<property name = "PointB" >	
+			<bean class = "org.tanmay.learnjava.Point" scope = "prototype">
+				<property name = "x" value = "-20" 	/>
+				<property name = "y" value = "0" 	/>
+			</bean>
+		</property>
+		
+		<property name = "PointC" >
+			<bean class = "org.tanmay.learnjava.Point" scope = "prototype">
+				<property name = "x" value = "+40" 	/>
+				<property name = "y" value = "0" 	/>
+			</bean>
+		</property>
 	</bean>
 
 	<bean id= "zeropoint" class = "org.tanmay.learnjava.Point" scope = "prototype">
-		<property name = "x" value = "0" />
-		<property name = "y" value = "0" />
-	</bean>
-	
-	<bean id= "point2" class = "org.tanmay.learnjava.Point" scope = "prototype">
-		<property name = "x" value = "-20" />
-		<property name = "y" value = "0" />
-	</bean>
-	
-	<bean id= "point3" class = "org.tanmay.learnjava.Point" scope = "prototype">
-		<property name = "x" value = "+20" />
-		<property name = "y" value = "0" />
+		<property name = "x" value = "0" 	/>
+		<property name = "y" value = "0" 	/>
 	</bean>
 </beans>
