@@ -9,8 +9,9 @@
 		scope = "prototype" 
 	>
 		
-		<constructor-arg value = "Equilateral" />
-		<constructor-arg value = "Three equal sides 3" />
+		<constructor-arg value = "Scalene" />
+		<constructor-arg value = "3"	/>
+		
 		
 	</bean>
 
